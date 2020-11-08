@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "watch": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "typeAcquisition": {
+    "enable": true,
+    "include": [
+      "Editor"
+    ]
+  },
+  "include": [
+    "src",
+    "editor"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

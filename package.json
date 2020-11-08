@@ -1,0 +1,47 @@
+{
+  "name": "plugin-ts",
+  "version": "1.0.0",
+  "author": "xu_yanfeng",
+  "description": "plugin-ts",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "contributions": {
+    "menu": [
+      {
+        "path": "插件",
+        "label": "test",
+        "message": "onTest"
+      },
+      {
+        "path": "插件",
+        "label": "打开面板",
+        "message": "openPanel"
+      }
+    ],
+    "messages": {
+      "onTest": {
+        "methods": [
+          "onTest"
+        ]
+      },
+      "openPanel": {
+        "methods": [
+          "openPanel"
+        ]
+      }
+    }
+  },
+  "panels": {
+    "panel": {
+      "title": "UI面板",
+      "type": "dockable",
+      "main": "./dist/panel.js"
+    }
+  },
+  "dependencies": {
+    "@types/node": "^14.14.6",
+    "editor": "file:editor"
+  }
+}
