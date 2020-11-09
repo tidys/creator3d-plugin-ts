@@ -5,7 +5,8 @@
   "description": "plugin-ts",
   "main": "./dist/main.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "webpack": "webpack --progress --hide-modules --display-error-details"
   },
   "contributions": {
     "menu": [
@@ -42,6 +43,15 @@
   },
   "dependencies": {
     "@types/node": "^14.14.6",
-    "editor": "file:editor"
+    "editor": "file:editor",
+    "ts-loader": "^8.0.11",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.4.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
   }
 }
