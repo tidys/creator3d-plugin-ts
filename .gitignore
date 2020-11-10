@@ -1,3 +1,4 @@
 dist
 think
 ./idea
+node_modules/
