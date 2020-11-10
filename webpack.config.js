@@ -3,13 +3,14 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 
 module.exports = {
+    target: "node",
     entry: {
         panel: './src/panel-view.vue'
     },
     output: {
         path: Path.join(__dirname, './dist'),
         filename: "panel-view.js",
-        library: 'hello'
+        library: 'panel'
     },
     mode: 'development',
     devtool: 'source-map',
